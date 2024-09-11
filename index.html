@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tester site</title>
+
+	<!-- Bootstrap reboot (для сброса стилей) -->
+	<link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+
+	<!-- Bootstrap сетка -->
+	<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+	<!-- Шрифты с Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+	<!-- Стили сайта -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="navbar-brand">Logtype</a>
+
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О сайте</a></li>
+                    <li><a href="#">Что то</a></li>
+                    <li><a href="#">С чем то</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+    </div>
+</nav>
+<div class="main-menu">
+    <h1 class="main-menu-theme">Choose your direction</h1>
+    <div class="main-menu-images">
+        <img src="download.png" alt="Left" usemap="#left_turn">
+        <img src="images.png" alt="Right" usemap="#right_turn">
+    </div>
+    <map name="#left_turn">
+        <area shape="rect" coords="100,60,240,120" href="left.html">
+    </map>
+    <map name="#right_turn">
+        <area shape="rect" coords="0,0,300,300" href="right.html">
+    </map>
+</div>
+</body>
+</html>
